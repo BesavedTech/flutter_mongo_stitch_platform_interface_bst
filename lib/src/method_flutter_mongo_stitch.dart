@@ -10,7 +10,7 @@ const MethodChannel _channel = MethodChannel('flutter_mongo_stitch');
 /// An implementation of [FlutterMongoStitchPlatform] that uses method channels.
 class MethodChannelFlutterMongoStitch extends FlutterMongoStitchPlatform {
   @override
-  Future connectToMongo(String appId) async {
+  Future connectToMongo({String? appId}) async {
     await _channel.invokeMethod('connectMongo', {'app_id': appId});
   }
 

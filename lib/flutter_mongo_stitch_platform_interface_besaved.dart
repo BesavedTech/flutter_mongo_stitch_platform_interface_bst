@@ -34,7 +34,7 @@ abstract class FlutterMongoStitchPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future connectToMongo(String appId) async {
+  Future connectToMongo({String? appId}) async {
     throw UnimplementedError('connectToMongo() has not been implemented.');
   }
 
